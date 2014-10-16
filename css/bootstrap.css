@@ -3094,6 +3094,7 @@ input[type="button"].btn-block {
 }
 .collapse.in {
   display: block;
+  background: linear-gradient(transparent, black, black, black);
 }
 tr.collapse.in {
   display: table-row;
@@ -3793,6 +3794,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-collapse.in {
   overflow-y: auto;
+  background: linear-gradient(transparent, black, black, black);
 }
 @media (min-width: 768px) {
   .navbar-collapse {
@@ -3809,6 +3811,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-collapse.in {
     overflow-y: visible;
+    background: linear-gradient(transparent, black, black, black);"
   }
   .navbar-fixed-top .navbar-collapse,
   .navbar-static-top .navbar-collapse,
