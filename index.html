@@ -65,7 +65,7 @@
     </nav>
 
     <!-- Header -->
-    <div class="intro-header" >
+    <div class="intro-header" style="min-height: 100%" >
 
         <div class="container">
 
@@ -110,15 +110,14 @@
 
         </div>
         <!-- /.container -->
-
     </div>
     <!-- /.intro-header -->
 
     <!-- Page Content -->
 
-    <div class="content-section-a">
+    <div class="content-section-a" id="startchange">
 
-        <div class="container">
+        <div class="container" >
 
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
@@ -221,10 +220,25 @@
 
     <!-- jQuery Version 1.11.0 -->
     <script src="js/jquery-1.11.0.js"></script>
+    <script>      
+   var scroll_start = 0;
+   var startchange = $('#startchange');
+   var offset = startchange.offset();
+    if (startchange.length){
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      x = scroll_start / offset.top;
+      y = 'rgba(0,0,0,';
+      if(scroll_start > 10) {
+          $(".navbar-inverse").css('background-color', y.concat(x.toString()).concat(')'));
+       } else {
+          $('.navbar-inverse').css('background-color', 'transparent');
+       }
+   });
+    }</script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
 </body>
 
 </html>
