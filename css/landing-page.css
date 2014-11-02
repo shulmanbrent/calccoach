@@ -164,3 +164,8 @@ footer {
 p.copyright {
     margin: 15px 0 0;
 }
+
+#about_us_intro {
+    background: url("../img/philly_skyline_1.jpg");
+    background-size: cover;
+}
