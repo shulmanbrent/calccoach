@@ -19,6 +19,7 @@
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <script type='text/javascript' src='./js/jquery.stellar.min.js'></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -62,7 +63,7 @@
         <!-- /.container -->
     </nav>
 
-    <div class="intro-header" style="min-height: 100%" >
+    <div class="intro-header" data-stellar-background-ratio="1" style="min-height: 100%; background-position: center center;background-attachment: fixed;background-repeat: no-repeat;"  >
 
         <div class="container">
             <div class="row">
@@ -103,10 +104,10 @@
                           <h4>Business Team</h4> 
                         </div><!-- /.col-lg-3 -->
                         <div class="col-lg-3">
-                          <a href="#bio_4" id="bio_4_button">
+                          <a href="#bio_4" id="bio_4_button_pic">
                              <img class="img-circle" src="./img/ashley_headshot.jpeg" alt="Generic placeholder image" style="width: 200px; height: 200px;">
                           </a>
-                          <a href="#bio_4" id="bio_4_button" style="color:white">
+                          <a href="#bio_4" id="bio_4_button_text" style="color:white">
                             <h3>Ashley Montgomery</h3>
                           </a>
                           <h4>Business Team</h4>
@@ -178,12 +179,12 @@
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Alexis Borden</h2>
-                    <p class="lead">Alexis Borden is a Senior in the College of Arts and Sciences at the University of Pennsylvania. She is a candidate  for a bachelor of arts in biology with a minor in neuroscience. Alexis is interested in attending medical school in the fall of 2015 and interested in going into the field of oncology. She is a four year starter of the varsity softball team at UPenn. She joined the CalcCoach business team because she has personally benefitted from Professor Rimmers videos and received an A in calculus I and calculus II and believes these resources were the reason she succeeded. She wants other students to have affordable access to the resources and aid that CalcCoach provided for her. 
+                    <p class="lead" style="text-align: justify">Alexis Borden is a Senior in the College of Arts and Sciences at the University of Pennsylvania. She is a candidate  for a bachelor of arts in biology with a minor in neuroscience. Alexis is interested in attending medical school in the fall of 2015 and interested in going into the field of oncology. She is a four year starter of the varsity softball team at UPenn. She joined the CalcCoach business team because she has personally benefitted from Professor Rimmers videos and received an A in calculus I and calculus II and believes these resources were the reason she succeeded. She wants other students to have affordable access to the resources and aid that CalcCoach provided for her. 
                         <br><br>
                         <!-- <i>More things about Alexis Borden</i> --></p>
                 </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="./img/alexis_borden_softball.jpeg" alt="">
+                <div class="col-lg-6 col-lg-12 col-lg-pull-6">
+                    <img class="img-responsive" src="./img/alexis_borden_softball.jpg" alt="">
                 </div>
             </div>
 
@@ -274,20 +275,22 @@
       }
     </script>
 
+
     <script>
       $('#bio_1_button_pic').click(function() {
         $("#bio_1").css('display', 'block');
-        $('#bio_2').css('display', 'none  ');
+        $('#bio_2').css('display', 'none');
         $('#bio_3').css('display', 'none');
         $('#bio_4').css('display', 'none');
         $("#click_help").css('display', 'none');
       })
     </script>
 
+
     <script>
       $('#bio_2_button_pic').click(function() {
         $("#bio_1").css('display', 'none');
-        $('#bio_2').css('display', 'visibile');
+        $('#bio_2').css('display', 'block');
         $('#bio_3').css('display', 'none');
         $('#bio_4').css('display', 'none');
         $("#click_help").css('display', 'none');
@@ -335,7 +338,17 @@
     </script>
 
     <script>
-      $('#bio_4_button').click(function() {
+      $('#bio_4_button_pic').click(function() {
+        $("#bio_1").css('display', 'none');
+        $('#bio_2').css('display', 'none');
+        $('#bio_3').css('display', 'none');
+        $('#bio_4').css('display', 'block');
+        $("#click_help").css('display', 'none');
+      })
+    </script>
+
+    <script>
+      $('#bio_4_button_text').click(function() {
         $("#bio_1").css('display', 'none');
         $('#bio_2').css('display', 'none');
         $('#bio_3').css('display', 'none');
