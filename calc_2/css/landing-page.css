@@ -31,7 +31,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background: url(../img/space_6.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -112,7 +112,7 @@ h6 {
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url(../img/banner-bg.jpg) no-repeat center center;
+    background: url(../img/space_6.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -166,6 +166,6 @@ p.copyright {
 }
 
 #about_us_intro {
-    background: url("../img/philly_skyline_1.jpg");
+    background: url(../img/space_6.jpg);
     background-size: cover;
 }
