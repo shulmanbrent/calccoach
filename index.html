@@ -20,7 +20,8 @@
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <script type='text/javascript' src='../jquery.particleground.min.js'></script>
+    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <script type='text/javascript' src='./js/jquery.stellar.min.js'></script>
      <script type='text/javascript' src='js/demo.js'></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -66,7 +67,7 @@
     </nav>
 
     <!-- Header -->
-    <div class="intro-header" style="min-height: 100%" >
+    <div class="intro-header" data-stellar-background-ratio="1" style="min-height: 100%; background-position: 50% 0px;background-attachment: fixed;background-repeat: no-repeat;">
 
         <div class="container">
 
@@ -169,13 +170,13 @@
     </div>
     <!-- /.content-section-b -->
 
-<div class="banner" style="
-    padding-bottom: 10px;
-    padding-top: 10px;
+<div class="banner" data-stellar-background-ratio="1" style=" background-position: 75% 15px;background-attachment: fixed;background-repeat: no-repeat; padding-top: 0px;padding-bottom: 0px;
+
 ">
 
 <!-- Bottom of Page - Connect with Out Team! -->
-<div class="intro-header" id="contact_us" style="/* min-height: 100%; */background: transparent;padding-top: 0px;padding-bottom: 0px;">
+<div class="intro-header" id="contact_us" style='background:transparent;     padding-bottom: 0px;
+    padding-top: 0px;'>
 
         <div class="container">
 
@@ -227,7 +228,7 @@
                           <a href="mailto:ashlem@wharton.upenn.edu">
                             <img class="img-circle" src="./img/ashley_headshot.jpeg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
                           </a>
-                          <a href="mailto:ashlem@wharton.upenn.edu">
+                          <a href="mailto:ashlem@wharton.upenn.edu" style="color:white">
                             <h3>Ashley Montgomery</h3>
                           </a>
                           <h4>Business Team</h4>
@@ -295,6 +296,12 @@
        }
    });
     }</script>
+    <script type="text/javascript">   $(function(){
+      $.stellar({
+        horizontalScrolling: false,
+        verticalOffset: 40
+      });
+    });</script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 </body>
