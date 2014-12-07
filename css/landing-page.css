@@ -31,7 +31,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/space_6.jpg) no-repeat bottom center;
+    background: url(../img/space_7.png) no-repeat bottom center;
     background-size: cover;
 }
 
@@ -166,6 +166,6 @@ p.copyright {
 }
 
 #about_us_intro {
-    background: url(../img/space_6.jpg);
+    background: url(../img/space_7.png);
     background-size: cover;
 }
