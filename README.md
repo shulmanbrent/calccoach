@@ -1,4 +1,4 @@
-calccoach
+CalcCoach
 =========
 
-CalcCoach.com html/css/javascript
+CalcCoach.com html/css/javascript/jQuery
